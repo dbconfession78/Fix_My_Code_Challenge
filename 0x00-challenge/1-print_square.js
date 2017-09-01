@@ -1,4 +1,4 @@
-#!/usr/bin/nodejs
+#!/usr/bin/node
 /*
     Print a square with the character #
     
@@ -14,7 +14,7 @@ if (process.argv.length <= 2) {
     process.exit(1)
 }
 
-size = parseInt(process.argv[2]) /* removed ' ,16' to fix */
+size = parseInt(process.argv[2], 10) /* removed ' ,16' to fix */
 
 for (var i = 0 ; i < size ; i ++) {
     for (var j = 0 ; j < size ; j ++) {
