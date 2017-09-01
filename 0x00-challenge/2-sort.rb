@@ -21,7 +21,8 @@ ARGV.each do |arg|
         if result[i] < i_arg
             i += 1
         else
-            result.insert(i, i_arg) # fix: remove ' - 1' after 'i'
+            # fix: remove ' - 1' after 'i'w
+            result.insert(i, i_arg)  
             is_inserted = true
             break
         end
