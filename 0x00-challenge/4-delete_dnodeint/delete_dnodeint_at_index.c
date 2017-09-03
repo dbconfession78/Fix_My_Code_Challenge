@@ -42,7 +42,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	{
 		if ((*head)->next)
 			(*head)->next->prev = (*head)->prev;
-		(*head)->prev->next = (*head)->next;
+		(*head)->prev->next = (*head)->next; /*fix: redirect pev node's next*/
 		free(*head);
 		*head = saved_head;
 	}
